@@ -19,6 +19,7 @@ public class Login extends HttpServlet {
             // writer.println("DOPE YOU ARE A VALID USER");
             RequestDispatcher rs = request.getRequestDispatcher("welcome.html");
             rs.include(request,response);
+            HttpSession session = request.getSession();
         }
         else
         {
